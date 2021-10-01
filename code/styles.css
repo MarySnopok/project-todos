@@ -4,9 +4,14 @@ body {
   text-align: center;
 }
 
+header {
+  margin-top: 40px;
+}
+
 main {
   width: 500px;
   margin: auto;
+  margin-top: 10px;
 }
 
 h1 {
