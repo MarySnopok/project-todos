@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>todos</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form autocomplete="off" id="todoForm"><input class="add-todo" type="text" name="task"
+                    placeholder="What needs to be done?">
+            </form>
+            <section>
+                <ul id="taskContainer">
+                    <li class="todo checked">
+                        <label class="switch">
+                            <input class="tick" type="checkbox">
+                            <span class="custom-checkbox"></span>
+                        </label>
+                        <div class="todo-text">
+                        </div>
+                        <button id="delete" class="delete">
+                            <svg class="icon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512">
+                                <path class="path"
+                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                </path>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+            <section class="actions">
+                <div class="nav-section">
+                    <span id="todosCount" class="todos-count">0 items left</span>
+                    <div class="nav-section-buttons">
+                        <button id="all" class="nav-buttons active">All</button>
+                        <button id="active" class="nav-buttons">Active</button>
+                        <button id="completed" class="nav-buttons">Completed</button>
+                    </div>
+                    <button id="cleared" class="cleared">Clear completed</button>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <p class="reference"> Created by Mary Snopok</p>
+        <p class="reference"> Refactored by Corey Maler</p>
+    </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

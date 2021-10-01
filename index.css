@@ -1,0 +1,243 @@
+body {
+  font-family: "Dosis", sans-serif;
+  background-color: rgb(254 255 255);
+  text-align: center;
+}
+
+main {
+  width: 500px;
+  margin: auto;
+}
+
+h1 {
+  color: rgba(94, 204, 211, 0.502);
+  font-weight: 700;
+  font-size: 50px;
+  width: 500px;
+  margin: auto;
+}
+
+.add-todo {
+  border: none;
+  width: 100%;
+  height: 50px;
+  border: 2px solid rgba(94, 204, 211, 0.502);
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: rgb(254 255 255);
+  caret-color: rgb(33 123 130);
+  color: rgb(33 123 130);
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.add-todo::placeholder {
+  font-family: "Dosis", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.add-todo:focus {
+  outline: none;
+  border: 2px solid rgba(94, 204, 211, 1);
+  color: rgb(33 123 130);
+}
+
+.container {
+  background-color: rgba(94, 204, 211, 0.502);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 10px solid rgb(94 204 211 / 0%);
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(94, 204, 211, 0.502);
+  padding-bottom: 2px;
+  margin-top: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: rgb(36 119 125);
+}
+
+.switch {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(94, 204, 211, 0.502);
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid rgba(94, 204, 211, 0.8);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.switch input:checked ~ .custom-checkbox::after {
+  display: block;
+}
+
+.switch input:checked ~ .custom-checkbox {
+  background-color: rgb(254 255 255);
+}
+
+.todo-text {
+  flex: 1 1 auto;
+  color: rgb(36 119 125);
+  font-weight: 400;
+  text-align: left;
+}
+
+.delete {
+  outline: none;
+  background: none;
+  cursor: pointer;
+  border: none;
+  display: block;
+}
+
+.delete:hover {
+  background-color: rgba(94, 204, 211, 0.502);
+}
+
+.delete .icon {
+  width: 15px;
+  margin-top: 2px;
+}
+
+.delete .icon .path {
+  fill: rgba(94, 204, 211, 1);
+}
+
+.delete:hover .icon .path {
+  fill: #fff;
+}
+
+.remove {
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+ul,
+li {
+  padding: 0;
+}
+
+.actions {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.nav-section {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.todos-count {
+  font-family: "Dosis", sans-serif;
+  font-weight: 200;
+  color: rgb(36 119 125);
+  font-size: 16px;
+}
+
+.nav-section-buttons {
+  margin-left: 33px;
+}
+
+.nav-buttons {
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
+  color: rgb(36 119 125);
+  font-size: 16px;
+  flex-direction: row;
+  margin-left: 2px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+
+.nav-buttons:first-child {
+  margin-left: 0;
+}
+
+.nav-buttons:hover {
+  border: 2px solid rgba(94, 204, 211, 1);
+  background: rgb(254 255 255);
+}
+
+.active {
+  border: 2px solid rgba(94, 204, 211, 1);
+}
+
+.cleared {
+  font-family: "Dosis", sans-serif;
+  font-weight: 200;
+  color: rgb(36 119 125);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  background: none;
+}
+
+.cleared:hover {
+  text-decoration: underline;
+}
+
+footer {
+  padding-top: 40px;
+  width: 500px;
+  margin: auto;
+}
+
+.reference {
+  font-size: small;
+  font-weight: 100;
+  margin: 0;
+  padding-top: 0;
+  line-height: 20px;
+  color: #c1bfbf;
+}
