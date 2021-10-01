@@ -9,17 +9,17 @@ header {
 }
 
 main {
-  width: 500px;
   margin: auto;
   margin-top: 10px;
+  max-width: 500px;
 }
 
 h1 {
   color: rgba(94, 204, 211, 0.502);
   font-weight: 700;
   font-size: 50px;
-  width: 500px;
   margin: auto;
+  max-width: 500px;
 }
 
 .add-todo {
@@ -226,6 +226,7 @@ li {
   font-size: 16px;
   cursor: pointer;
   background: none;
+  align-self: flex-start;
 }
 
 .cleared:hover {
@@ -234,7 +235,7 @@ li {
 
 footer {
   padding-top: 40px;
-  width: 500px;
+  max-width: 500px;
   margin: auto;
 }
 
@@ -245,4 +246,12 @@ footer {
   padding-top: 0;
   line-height: 20px;
   color: #c1bfbf;
+}
+
+/* Portrait and Landscape */
+@media (max-device-width: 480px) {
+  .nav-section-buttons {
+    display: flex;
+    flex-direction: column;
+  }
 }
