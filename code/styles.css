@@ -32,7 +32,8 @@ h1 {
   background-color: rgb(254 255 255);
   caret-color: rgb(33 123 130);
   color: rgb(33 123 130);
-  padding-left: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
   font-size: 20px;
 }
 

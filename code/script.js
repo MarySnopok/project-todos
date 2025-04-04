@@ -1,6 +1,4 @@
-// Saving input to the local storage
 let allTodos = JSON.parse(window.localStorage.getItem("allTodos") || "[]");
-// Filter can be "all", "active" and "completed"
 let filter = window.localStorage.getItem("filter") || "all";
 
 const save = () => {
@@ -150,10 +148,7 @@ function renderAllTodos() {
     todosToRender = completedTodos;
     completedButton.classList.add("active");
   } else {
-    throw new Error(
-      'incorrect value of filter, expected "all", "active" or "completed", got ' +
-        filter
-    );
+    throw new Error('incorrect value of filter, expected "all", "active" or "completed", got ' + filter);
   }
 
   document.querySelector("ul").innerHTML = "";
